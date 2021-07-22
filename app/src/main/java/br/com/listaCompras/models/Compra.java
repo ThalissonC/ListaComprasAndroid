@@ -5,53 +5,74 @@ import android.widget.TextView;
 import com.orm.SugarRecord;
 
 public class Compra extends SugarRecord {
-    private TextView nome;
-    private TextView categoria;
-    private TextView quantidade;
-    private TextView valor;
-    private TextView data;
+
+    private String nome;
+    private String quantidade; //int
+    private String categoria;
+    private String valorUnitario; //double
+    private String formaDePagamento;
+    private String parcelas;
+    //private double valorTotal = quantidade * valorUnitario;
+    private String data;
+
 
     public Compra() {
 
-    };
+    }
 
-    public TextView getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(TextView nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public TextView getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(TextView categoria) {
-        this.categoria = categoria;
-    }
-
-    public TextView getQuantidade() {
+    public String getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(TextView quantidade) {
+    public void setQuantidade(String quantidade) {
         this.quantidade = quantidade;
     }
 
-    public TextView getValor() {
-        return valor;
+    public String getCategoria() {
+        return categoria;
     }
 
-    public void setValor(TextView valor) {
-        this.valor = valor;
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
-    public TextView getData() {
+    public String getValorUnitario() {
+        return valorUnitario;
+    }
+
+    public void setValorUnitario(String valorUnitario) {
+        this.valorUnitario = valorUnitario;
+    }
+
+    public String getFormaDePagamento() {
+        return formaDePagamento;
+    }
+
+    public void setFormaDePagamento(String formaDePagamento) {
+        this.formaDePagamento = formaDePagamento;
+    }
+
+    public String getParcelas() {
+        return parcelas;
+    }
+
+    public void setParcelas(String parcelas) {
+        this.parcelas = parcelas;
+    }
+
+    public String getData() {
         return data;
     }
 
-    public void setData(TextView data) {
+    public void setData(String data) {
         this.data = data;
     }
 }

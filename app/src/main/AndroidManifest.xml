@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.listaCompras">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,7 +17,8 @@
         <meta-data android:name="DATABASE" android:value="br.com.listaCompras_database.db" />
         <meta-data android:name="VERSION" android:value="6" />
         <meta-data android:name="QUERY_LOG" android:value="true" />
-        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="br.com.listaCompras.models.Compra" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="br.com.listaCompras.models" />
+
 
         <activity android:name="br.com.listaCompras.MainActivity">
             <intent-filter>
