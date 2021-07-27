@@ -18,7 +18,7 @@ public interface CompraService {
 //    Call<Compra> logar(@Body Compra compra);
 
     @GET("api/alimentos/")
-    Call<List<Compra>> listarAlimentos();
+    Call<List<Compra>> listarCompras();
 
 
 }

@@ -1,4 +1,4 @@
-package br.com.listaCompras;
+package br.com.listaCompras.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,8 +7,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
+
 import java.util.List;
 
+import br.com.listaCompras.R;
 import br.com.listaCompras.api.retrofit.RetrofitConfig;
 import br.com.listaCompras.models.Compra;
 import retrofit2.Call;
@@ -24,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     TextView editDataCompras;
 
 
-    Compra compra = new Compra();
+//    Compra compra = new Compra();
 
 
 
@@ -35,8 +38,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.compras);
+        final TextView resposta = findViewById(R.id.respostaCompra);
 
         //CLASSE
 //        Usuario usuario = new Usuario();
@@ -85,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 //        List<Usuario> usuario = Usuario.listAll(Usuario.class);
         Log.d("teste", "teste");
 
-        Call<List<Compra>> call = new RetrofitConfig().setCompraService().listarAlimentos();
+        Call<List<Compra>> call = new RetrofitConfig().setCompraService().listarCompras();
         call.enqueue(new Callback<List<Compra>>() {
 
             @Override
