@@ -1,13 +1,10 @@
 package br.com.listaCompras.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.TextView;
 
-import com.google.gson.Gson;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
 
@@ -41,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.compras);
-        final TextView resposta = findViewById(R.id.respostaCompra);
+//        final TextView resposta = findViewById(R.id.respostaCompra);
 
         //CLASSE
 //        Usuario usuario = new Usuario();
@@ -208,39 +205,39 @@ public class MainActivity extends AppCompatActivity {
          return "TEXT VIEWS INVISIVEIS";
     }
 
-    public void inicializandoComponentes(View view){
-
-
-        TextView recebeEditNomeCompras = findViewById(R.id.editNomeCompras);
-        TextView recebeEditCategoriaCompras = findViewById(R.id.editCategoriaCompras);
-        TextView recebeEditQuantidadeCompras = findViewById(R.id.editQuantidadeCompras);
-        TextView recebeEditValorCompras = findViewById(R.id.editValorCompras);
-        TextView recebeEditDataCompras = findViewById(R.id.editDataCompras);
-
-        recebeEditNomeCompras.getText().toString();
-        recebeEditCategoriaCompras.getText().toString();
-        recebeEditQuantidadeCompras.getText().toString();
-        recebeEditValorCompras.getText().toString();
-        recebeEditDataCompras.getText().toString();
-
-        String novoNomeCompras = "Steak";
-        recebeEditNomeCompras.setText(novoNomeCompras);
-
-        String novoCategoriaCompras = "Alimento";
-        recebeEditCategoriaCompras.setText(novoCategoriaCompras);
-
-        String novoQuantidadeCompras = "1";
-        recebeEditQuantidadeCompras.setText(novoQuantidadeCompras);
-
-        String novoValorCompras = "8.90";
-        recebeEditValorCompras.setText(novoValorCompras);
-
-        String novoDataCompras = "06-06-21";
-        recebeEditDataCompras.setText(novoDataCompras);
-
-//        String novaMensagem = "teste";
-//        recebeEditNomeCompras.setText(novaMensagem);
-    }
+//    public void inicializandoComponentes(View view){
+//
+//
+//        TextView recebeEditNomeCompras = findViewById(R.id.editNomeCompras);
+//        TextView recebeEditCategoriaCompras = findViewById(R.id.editCategoriaCompras);
+//        TextView recebeEditQuantidadeCompras = findViewById(R.id.editQuantidadeCompras);
+//        TextView recebeEditValorCompras = findViewById(R.id.editValorCompras);
+//        TextView recebeEditDataCompras = findViewById(R.id.editDataCompras);
+//
+//        recebeEditNomeCompras.getText().toString();
+//        recebeEditCategoriaCompras.getText().toString();
+//        recebeEditQuantidadeCompras.getText().toString();
+//        recebeEditValorCompras.getText().toString();
+//        recebeEditDataCompras.getText().toString();
+//
+//        String novoNomeCompras = "Steak";
+//        recebeEditNomeCompras.setText(novoNomeCompras);
+//
+//        String novoCategoriaCompras = "Alimento";
+//        recebeEditCategoriaCompras.setText(novoCategoriaCompras);
+//
+//        String novoQuantidadeCompras = "1";
+//        recebeEditQuantidadeCompras.setText(novoQuantidadeCompras);
+//
+//        String novoValorCompras = "8.90";
+//        recebeEditValorCompras.setText(novoValorCompras);
+//
+//        String novoDataCompras = "06-06-21";
+//        recebeEditDataCompras.setText(novoDataCompras);
+//
+////        String novaMensagem = "teste";
+////        recebeEditNomeCompras.setText(novaMensagem);
+//    }
 
 
 
