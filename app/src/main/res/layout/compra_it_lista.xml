@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/usuario_item_lista_nome"
+        android:id="@+id/compra_item_lista_nome"
         android:layout_width="57dp"
         android:layout_height="25dp"
         android:layout_marginStart="32dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/usuario_item_lista_textview_estadoCivil"
+        android:id="@+id/compra_item_lista_textview_quantidade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
@@ -30,15 +30,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/usuario_item_lista_button"
+    <TextView
+        android:id="@+id/compra_item_lista_textview_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="Button"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="76dp"
+        android:text="data"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
-        app:layout_constraintStart_toEndOf="@+id/usuario_item_lista_textview_estadoCivil"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

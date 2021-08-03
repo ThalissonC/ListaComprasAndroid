@@ -7,8 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -56,9 +54,9 @@ public class CompraAdapter extends BaseAdapter {
             mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = mInflater.inflate(R.layout.compra_it_lista, null);
             holder = new CompraAdapter.ListContent();
-            holder.usuario_item_lista_nome = (TextView) view.findViewById(R.id.usuario_item_lista_nome);
-            holder.usuario_item_lista_textview_estadoCivil = (TextView) view.findViewById(R.id.usuario_item_lista_textview_estadoCivil);
-            holder.usuario_item_lista_button = (Button) view.findViewById(R.id.usuario_item_lista_button);
+            holder.compra_item_lista_nome = (TextView) view.findViewById(R.id.compra_item_lista_nome);
+            holder.compra_item_lista_textview_quantidade = (TextView) view.findViewById(R.id.compra_item_lista_textview_quantidade);
+            holder.compra_item_lista_textview_data = (TextView) view.findViewById(R.id.compra_item_lista_textview_data);
 
 
             view.setTag(holder);
@@ -67,14 +65,11 @@ public class CompraAdapter extends BaseAdapter {
             holder = (CompraAdapter.ListContent) view.getTag();
         }
 
-        holder.usuario_item_lista_nome.setText(compra.getNome());
-        holder.usuario_item_lista_textview_estadoCivil.setText(String.valueOf(compra.getQuantidade()));
-        holder.usuario_item_lista_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(context,"teste",Toast.LENGTH_SHORT).show();
-            }
-        });
+        holder.compra_item_lista_nome.setText(compra.getNome());
+        holder.compra_item_lista_textview_quantidade.setText(compra.getQuantidade());
+        holder.compra_item_lista_textview_data.setText(compra.getData());
+
+
 
 
         return view;
@@ -82,7 +77,6 @@ public class CompraAdapter extends BaseAdapter {
 
 
     public static class ListContent {
-        TextView usuario_item_lista_nome,usuario_item_lista_textview_estadoCivil;
-        Button usuario_item_lista_button;
+        TextView compra_item_lista_nome,compra_item_lista_textview_quantidade, compra_item_lista_textview_data;
     }
 }

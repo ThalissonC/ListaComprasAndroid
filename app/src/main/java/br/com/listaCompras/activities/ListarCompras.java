@@ -27,7 +27,7 @@ public class ListarCompras extends AppCompatActivity{
             @Override
             public void onResponse(Call<List<Compra>> call, Response<List<Compra>> response) {
 
-                ListView listView = findViewById(R.id.usuario_lista_listview_lista);
+                ListView listView = findViewById(R.id.compra_lista_listview_lista);
 
                 List<Compra> comprasList = response.body();
                 Log.d("teste","teste");
