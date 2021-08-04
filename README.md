@@ -14,7 +14,7 @@ Acesso a Internet
 
 Suporte para Java 8
 
-Androi Studio IDE
+Androi Studio IDE 3.5.3
   - API 29 Instalada
   - API 26 no AVD
   - Gradle Plugin versão miníma: 3.5.3
