@@ -10,6 +10,8 @@ Consulte **Instalação** para saber como implantar o projeto.
 
 REQUISITOS DE SOFTWARE:
 
+Acesso a Internet
+
 Suporte para Java 8
 
 Androi Studio IDE
