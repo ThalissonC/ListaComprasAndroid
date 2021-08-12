@@ -20,8 +20,8 @@
         <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="br.com.listaCompras.models" />
 
 
-        <activity android:name="br.com.listaCompras.activities.MainActivity"></activity>
-        <activity android:name="br.com.listaCompras.activities.ListarCompras">
+<!--        <activity android:name="br.com.listaCompras.activities.MainActivity"></activity>-->
+        <activity android:name="br.com.listaCompras.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

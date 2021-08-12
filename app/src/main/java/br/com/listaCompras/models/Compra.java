@@ -1,7 +1,5 @@
 package br.com.listaCompras.models;
 
-import android.widget.TextView;
-
 import com.orm.SugarRecord;
 
 public class Compra extends SugarRecord {
@@ -75,4 +73,16 @@ public class Compra extends SugarRecord {
     public void setData(String data) {
         this.data = data;
     }
+
+    @Override public String toString() {
+//        return "Nome: " + nome + " Quantidade: " + quantidade + " Categoria: " + categoria + " Valor: " + valorUnitario + " Data: " + data ;
+        return  this.nome +"                         " + this.quantidade + "                       " + this.categoria;
+    }
+
+
+     public String toStringNome() {
+//        return "Nome: " + nome + " Quantidade: " + quantidade + " Categoria: " + categoria + " Valor: " + valorUnitario + " Data: " + data ;
+        return this.nome;
+    }
+
 }
