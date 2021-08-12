@@ -4,7 +4,7 @@ Projeto Integrador UC 16
 
 ## 🚀 Começando
 
-Consulte **Instalação** para saber como implantar o projeto.
+Consulte **Instalação e configuração** para saber como implantar o projeto.
 
 ### 📋 Pré-requisitos
 
@@ -32,12 +32,12 @@ Processador Dual-core 1.2 Ghz, 64 bits
 
 Sistema operacional Android 8.0.
 
-### 🔧 Instalação
+### 🔧 Instalação e configuração
 
 Ter nó minimo a API 29 instalado no Android Studio
 Abrir o projeto em uma IDE que suporte o Java Android, e executar a classe MainActivity e logo depois seguir os passos abaixo:
 
-### ✅ Executando
+### ✅ Utilização
 
 1.  O app quando executado abrirá na tela inicial e receberá eum uma lista os dados da API listando os dados registrados na lista de compras pela API.
 
@@ -56,5 +56,5 @@ Nós usamos [GitHub](https://github.com/) para controle de versão. Para conferi
 
 ## ✒️ Autores
 
-* **Um desenvolvedor** - *Thallison* - (https://github.com/ThalissonC)
-* **Weverton**  **Leonardo** **Felipe**- *Documentação* 
+* **Um desenvolvedor** - **Thallison** - (https://github.com/ThalissonC)
+* **Leonardo**  **Weverton** e **Felipe** - *Documentação* 
